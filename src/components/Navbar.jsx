@@ -13,7 +13,7 @@ const Navbar = () => {
             <img 
               src="../src/assets/logo.png" 
               alt="CcHub Logo" 
-              className="h-24 w-auto"
+              className="h-20 w-auto"
             />
           </Link>
 
