@@ -14,19 +14,23 @@ const Home = () => {
     {
       heading: "SUSTAINABLE TECHNOLOGY",
       title: "Mainstraming Green and Sustainable Technology for a Resilient Future",
-      content: "Contribute Image: Panelist session at the GCIP Launch in Nambia Across Africa, a growing number of businesses are stepping up to tackle continet's most urgent challenges-climate change, energy"
+      content: "Contribute Image: Panelist session at the GCIP Launch in Nambia Across Africa, a growing number of businesses are stepping up to tackle continet's most urgent challenges-climate change, energy",
+      date: "1 WEEK AGO"
     },
 
     {
-      heading: "SUSTAINABLE TECHNOLOGY",
-      title: "Mainstraming Green and Sustainable Technology for a Resilient Future",
-      content: "Contribute Image: Panelist session at the GCIP Launch in Nambia Across Africa, a growing number of businesses are stepping up to tackle continet's most urgent challenges-climate change, energy"
+      heading: "STARTUP INSIGHTS ",
+      title: "How African Startups Can Win Investors in 2025",
+      content: "Photo Credit: Envato Elements A fintech founder once walked into a pitch meeting armed with charts, downloads, and dazzling user numbers. It was 2021—and that was enough. Fast forward...",
+      date: "2 WEEKs AGO"
+
     },
 
     {
-      heading: "SUSTAINABLE TECHNOLOGY",
-      title: "Mainstraming Green and Sustainable Technology for a Resilient Future",
-      content: "Contribute Image: Panelist session at the GCIP Launch in Nambia Across Africa, a growing number of businesses are stepping up to tackle continet's most urgent challenges-climate change, energy"
+      heading: " TECHNOLOGY AND SOCIETY",
+      title: "Empowering Women for Africa’s Transformation",
+      content: "Access to digital tools and the internet is crucial for women’s empowerment as it offers opportunities in education, financial inclusion, and business growth. However, many women globally and especially...",
+      date: "2 WEEKs AGO"
     },
   ];
 
@@ -156,15 +160,12 @@ const Home = () => {
               className="bg-white rounded-xl shadow-lg overflow-hidden transition-transform duration-300 hover:-translate-y-2"
             >
               {/* Image Placeholder - Add your image URL */}
-              <div className="h-48 bg-gray-200 relative overflow-hidden">
-                <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/50"></div>
-              </div>
-              
+               
               <div className="p-6">
                 <div className="mb-3 flex items-center text-sm text-gray-500">
                   <span className="font-medium text-blue-600">{blog.heading}</span>
                   <span className="mx-2">•</span>
-                  <time>Mar 15, 2023</time>
+                  <time>{blog.date} </time>
                 </div>
 
                 <h2 className="text-xl font-bold text-gray-900 mb-3">

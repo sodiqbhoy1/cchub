@@ -17,9 +17,9 @@ const Footer = () => {
                 Driving innovation across Africa through technology and creativity
               </p>
               <div className="text-gray-400">
-                <p>Oyo, Nigeria</p>
-                <p>+234 123 456 789</p>
-                <p>hello@OyoTech Hub.africa</p>
+                <p>km 45, Kasali Elesan Building, Oyo Town. Nigeria</p>
+                <p>+234 903 949 777</p>
+                <p> info@Oyotechub.com </p>
               </div>
             </div>
   
