@@ -2,6 +2,7 @@ import React from 'react';
 import Partners from './Partners';
 import Navbar from './Navbar';
 import Footer from './Footer';
+import Education from '../assets/education.jpeg'; // Example image import
 
 const About = () => {
   const team = [
@@ -48,7 +49,7 @@ const About = () => {
               </ul>
             </div>
             <div className="bg-gray-100 h-96 rounded-xl">
-              <img src="../src/assets/education.jpeg" alt="" className="h-full w-full object-cover rounded-xl" />
+              <img src={Education}  alt="Image" className="h-full w-full object-cover rounded-xl" />
             </div>
           </div>
         </section>

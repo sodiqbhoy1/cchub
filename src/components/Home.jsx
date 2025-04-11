@@ -1,7 +1,11 @@
 import React from 'react'
 import Navbar from './Navbar';
 import Footer from './Footer';
-// import Economy from 
+import CreativeEconomy from '../assets/creative-economy.jpeg';
+import Innovation from '../assets/innovation.jpeg';
+import SocialImpact from '../assets/social-impact.jpeg';
+import Education from '../assets/education.jpeg';
+import Startup from '../assets/startup.jpeg';
 
 const Home = () => {
 
@@ -25,14 +29,15 @@ const Home = () => {
     },
   ];
 
-  const focusAreas = [
-    { title: "Creative Economy", image: "/src/assets/creative-economy.jpeg" },
-    { title: "Technology Innovation", image: "/src/assets/innovation.jpeg" },
-    { title: "Social Impact", image: "/src/assets/social-impact.jpeg" },
-    { title: "Education", image: "/src/assets/education.jpeg" },
-    { title: "Startup Support", image: "/src/assets/startup.jpeg" },
-  ];
 
+  const focusAreas = [
+    { title: "Creative Economy", image: CreativeEconomy },
+    { title: "Technology Innovation", image: Innovation },
+    { title: "Social Impact", image: SocialImpact },
+    { title: "Education", image: Education },
+    { title: "Startup Support", image: Startup },
+  ];
+  
 
 
 

@@ -1,3 +1,5 @@
+import Logo from '../assets/logo.png'
+
 const Footer = () => {
     return (
       <footer className="bg-[#0A2540] text-white">
@@ -6,7 +8,7 @@ const Footer = () => {
             {/* Company Info */}
             <div className="mb-8 md:mb-0">
               <img 
-                src="/logo-white.png" 
+                src={Logo} 
                 alt="CcHub Logo" 
                 className="h-12 w-auto mb-4"
               />
