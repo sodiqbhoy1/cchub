@@ -11,6 +11,10 @@ import MacArthur from '../assets/mac-arthur-logo.png';
 import Mainone from '../assets/mainone.png';
 import Omidyar from '../assets/omidyar.png';
 import Raspberry from '../assets/raspberry.png';
+import Schmidt from '../assets/schmidt.png';
+import Unionbank from '../assets/unionbank.png';
+import Tonyelumelu from '../assets/tonyelumelu.png';
+import Visa from '../assets/visa.png';
     
         const Logos = [
             {id:1, src: Airbus, alt: "Airbus" },
@@ -25,6 +29,10 @@ import Raspberry from '../assets/raspberry.png';
             {id:10, src: MacArthur, alt: "MacArthur Foundation" },
             {id:11, src: Mainone, alt: "MainOne" },
             {id:12, src: Omidyar, alt: "Omidyar Network" },
-            {id:13, src: Raspberry, alt: "Raspberry Pi Foundation" }
+            {id:13, src: Raspberry, alt: "Raspberry Pi Foundation" },
+            {id:14, src: Schmidt, alt: "Schmidt Futures" },
+            {id:15, src: Unionbank, alt: "Union Bank" },
+            {id:16, src: Tonyelumelu, alt: "Tony Elumelu Foundation" },
+            {id:17, src: Visa, alt: "Visa" },
         ];
 export default Logos;

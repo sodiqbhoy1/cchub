@@ -3,11 +3,14 @@ import Partners from './Partners';
 import Navbar from './Navbar';
 import Footer from './Footer';
 import Education from '../assets/education.jpeg'; // Example image import
-
+import Faozey from '../assets/faozy.webp'; // Example image import
+import Atoro from '../assets/Atoro.jpg'; // Example image import
+import Abbey from '../assets/Abbey.jpg'; // Example image import
 const About = () => {
   const team = [
-    { name: "John Doe", role: "CEO", bio: "Tech visionary with 15+ years experience" },
-    { name: "Jane Smith", role: "CTO", bio: "Innovation strategist and mentor" },
+    { name: "Faozey Nurudeen", role: "President & Founder", image: Faozey },
+    { name: "Atoro Ibukun ", role: "Snr. Digital Transformation Expert", image: Atoro },
+    { name: "Abbey Adegbola ", role: "Chief Information Security Advisor", image: Abbey },
     // Add more team members
   ];
 
@@ -57,22 +60,38 @@ const About = () => {
         
         {/* Team Section */}
         <section className="py-16 px-4 md:px-8">
-          <div className="max-w-6xl mx-auto">
-            <h2 className="text-3xl font-bold text-center text-[#0A2540] mb-12">Leadership Team</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {team.map((member, index) => (
-                <div key={index} className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
-                  <div className="bg-gray-200 h-64"></div>
-                  <div className="p-6">
-                    <h3 className="text-xl font-bold text-[#0A2540]">{member.name}</h3>
-                    <p className="text-[#6BDFF2] mb-3">{member.role}</p>
-                    <p className="text-gray-600">{member.bio}</p>
-                  </div>
-                </div>
-              ))}
-            </div>
+  <div className="max-w-6xl mx-auto">
+    <h2 className="text-3xl font-bold text-center text-[#0A2540] mb-12">Leadership Team</h2>
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      {team.map((member, index) => (
+        <div 
+          key={index} 
+          className="group bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300"
+        >
+          {/* Image Container */}
+          <div className="relative h-64 w-full overflow-hidden ">
+            <img 
+              src={member.image} 
+              alt={`Portrait of ${member.name}`}
+              className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+            />
+            {/* Optional Gradient Overlay */}
+            <div className="absolute inset-0 bg-gradient-to-t from-[#0A2540]/30 to-transparent"></div>
           </div>
-        </section>
+
+          {/* Content */}
+          <div className="p-6">
+            <h3 className="text-xl font-bold text-[#0A2540] mb-2">{member.name}</h3>
+            <p className="text-[#6BDFF2] font-medium">{member.role}</p>
+            {member.bio && (
+              <p className="text-gray-600 mt-4 line-clamp-3">{member.bio}</p>
+            )}
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
 
         {/* CTA Section */}
         <div className="bg-[#0A2540] text-white py-16 text-center">
