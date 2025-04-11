@@ -13,7 +13,7 @@ const Navbar = () => {
           <Link to="/" className="flex items-center">
             <img 
               src={Logo} 
-              alt="CcHub Logo" 
+              alt="Oyo Tech Hub Logo" 
               className="h-20 w-auto"
             />
           </Link>

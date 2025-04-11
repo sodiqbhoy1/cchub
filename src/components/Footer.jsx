@@ -1,3 +1,4 @@
+import { Link } from 'react-router';
 import Logo from '../assets/logo.png'
 
 const Footer = () => {
@@ -9,16 +10,16 @@ const Footer = () => {
             <div className="mb-8 md:mb-0">
               <img 
                 src={Logo} 
-                alt="CcHub Logo" 
+                alt="Oyo Tech Hub Logo" 
                 className="h-12 w-auto mb-4"
               />
               <p className="text-gray-300 mb-4">
                 Driving innovation across Africa through technology and creativity
               </p>
               <div className="text-gray-400">
-                <p>Lagos, Nigeria</p>
+                <p>Oyo, Nigeria</p>
                 <p>+234 123 456 789</p>
-                <p>hello@cchub.africa</p>
+                <p>hello@OyoTech Hub.africa</p>
               </div>
             </div>
   
@@ -26,10 +27,10 @@ const Footer = () => {
             <div className="mb-8 md:mb-0">
               <h3 className="text-lg font-bold mb-4 text-gray-100">Quick Links</h3>
               <ul className="space-y-2">
-                <li><a href="/about" className="hover:text-[#6BDFF2] transition-colors">About Us</a></li>
-                <li><a href="/programs" className="hover:text-[#6BDFF2] transition-colors">Programs</a></li>
-                <li><a href="/blog" className="hover:text-[#6BDFF2] transition-colors">Blog</a></li>
-                <li><a href="/contact" className="hover:text-[#6BDFF2] transition-colors">Contact</a></li>
+                <li><Link to="/about" className="hover:text-[#6BDFF2] transition-colors">About Us</Link></li>
+                <li><Link to="/programs" className="hover:text-[#6BDFF2] transition-colors">Programs</Link></li>
+                <li><Link to="/blog" className="hover:text-[#6BDFF2] transition-colors">Blog</Link></li>
+                <li><Link to="/contact" className="hover:text-[#6BDFF2] transition-colors">Contact</Link></li>
               </ul>
             </div>
   
@@ -37,10 +38,10 @@ const Footer = () => {
             <div className="mb-8 md:mb-0">
               <h3 className="text-lg font-bold mb-4 text-gray-100">Innovation</h3>
               <ul className="space-y-2">
-                <li><a href="/startups" className="hover:text-[#6BDFF2] transition-colors">Startups</a></li>
-                <li><a href="/research" className="hover:text-[#6BDFF2] transition-colors">Research</a></li>
-                <li><a href="/partners" className="hover:text-[#6BDFF2] transition-colors">Partnerships</a></li>
-                <li><a href="/careers" className="hover:text-[#6BDFF2] transition-colors">Careers</a></li>
+                <li><Link to="/startups" className="hover:text-[#6BDFF2] transition-colors">Startups</Link></li>
+                <li><Link to="/research" className="hover:text-[#6BDFF2] transition-colors">Research</Link></li>
+                <li><Link to="/partners" className="hover:text-[#6BDFF2] transition-colors">Partnerships</Link></li>
+                <li><Link to="/careers" className="hover:text-[#6BDFF2] transition-colors">Careers</Link></li>
               </ul>
             </div>
   
@@ -83,7 +84,7 @@ const Footer = () => {
           {/* Copyright */}
           <div className="border-t border-gray-700 mt-8 pt-8 text-center">
             <p className="text-gray-400">
-              &copy; {new Date().getFullYear()} CcHub Africa. All rights reserved.
+              &copy; {new Date().getFullYear()} Oyo Tech Hub Africa. All rights reserved.
             </p>
             <a 
               href="#top" 

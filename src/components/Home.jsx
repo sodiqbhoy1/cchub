@@ -6,6 +6,7 @@ import Innovation from '../assets/innovation.jpeg';
 import SocialImpact from '../assets/social-impact.jpeg';
 import Education from '../assets/education.jpeg';
 import Startup from '../assets/startup.jpeg';
+import HeroImage from '../assets/Hero.jpeg'; // Example image import
 
 const Home = () => {
 
@@ -43,76 +44,70 @@ const Home = () => {
 
   return (
     <>
-    <Navbar/>
-    <section className="bg-white">
-    {/* Hero Section */}
-    <div 
-  className="py-20 px-4 text-left"
-  style={{ 
-    backgroundColor: '#0A2540', // Primary dark blue
-    color: '#FFFFFF', // Pure white
-  }}
->
-  <div 
-    className="max-w-6xl mx-auto animate-fade-in"
-    style={{
-      opacity: 0,
-      animation: 'fadeInUp 1s ease-out forwards',
-      animationDelay: '0.3s'
-    }}
-  >
-    <h3 
-      className="text-lg font-semibold mb-4 tracking-wide"
-      style={{
-        color: '#6BDFF2', // Accent teal
-        animation: 'fadeInUp 0.8s ease-out forwards',
-        animationDelay: '0.5s'
-      }}
-    >
-      WHO WE ARE
-    </h3>
-    
-    <h2 
-      className="text-3xl md:text-5xl font-bold leading-tight mb-8"
-      style={{
-        maxWidth: '36rem',
-        animation: 'fadeInUp 0.8s ease-out forwards',
-        animationDelay: '0.7s'
-      }}
-    >
-      We are the leading pan-African creative and innovation ecosystem enabler
-    </h2>
-    
-    <p 
-      className="text-xl max-w-2xl"
-      style={{
-        color: '#A3B5C6', // Light gray-blue
-        animation: 'fadeInUp 0.8s ease-out forwards',
-        animationDelay: '0.9s'
-      }}
-    >
-      Our vision is to accelerate the application of social capital and technology 
-      for economic prosperity across Africa.
-    </p>
-  </div>
+ <Navbar/>
+      <section className="bg-white">
+        {/* Hero Section with Image */}
+        <div 
+          className="py-20 px-4 text-left"
+          style={{ 
+            backgroundColor: '#0A2540',
+            color: '#FFFFFF',
+          }}
+        >
+          <div 
+            className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12 animate-fade-in"
+          >
+            {/* Text Content */}
+            <div className="flex-1">
+              <h3 
+                className="text-lg font-semibold mb-4 tracking-wide"
+                style={{ color: '#6BDFF2' }}
+              >
+                WHO WE ARE
+              </h3>
+              <h2 
+                className="text-3xl md:text-5xl font-bold leading-tight mb-8"
+                style={{ maxWidth: '36rem' }}
+              >
+                We are the leading pan-African creative and innovation ecosystem enabler
+              </h2>
+              <p 
+                className="text-xl max-w-2xl"
+                style={{ color: '#A3B5C6' }}
+              >
+                Our vision is to accelerate the application of social capital and technology 
+                for economic prosperity across Africa.
+              </p>
+            </div>
 
-  <style jsx>{`
-    @keyframes fadeInUp {
-      0% {
-        opacity: 0;
-        transform: translateY(20px);
-      }
-      100% {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
+            {/* Image Section */}
+            <div className="flex-1 w-full">
+              <img 
+                src={HeroImage} 
+                alt="African innovation ecosystem" 
+                className="w-full h-full object-cover rounded-xl shadow-lg"
+                style={{ maxHeight: '500px' }}
+              />
+            </div>
+          </div>
 
-    .animate-fade-in {
-      animation: fadeInUp 1s ease-out forwards;
-    }
-  `}</style>
-</div>
+          <style jsx>{`
+            @keyframes fadeInUp {
+              0% {
+                opacity: 0;
+                transform: translateY(20px);
+              }
+              100% {
+                opacity: 1;
+                transform: translateY(0);
+              }
+            }
+
+            .animate-fade-in {
+              animation: fadeInUp 1s ease-out forwards;
+            }
+          `}</style>
+        </div>
 
     {/* Focus Areas Section */}
     <section className="py-16 px-4 md:px-8">

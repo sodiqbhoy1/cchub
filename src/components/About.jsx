@@ -21,9 +21,9 @@ const About = () => {
         {/* Hero Section */}
         <div className="bg-[#0A2540] text-white py-24 px-4">
           <div className="max-w-6xl mx-auto text-center">
-            <h1 className="text-4xl md:text-6xl font-bold mb-6">About CcHub</h1>
+            <h1 className="text-4xl md:text-6xl font-bold mb-6">About Oyo Tech Hub</h1>
             <p className="text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto">
-              CcHUB is an open living lab and pre-incubation space designed to be a multi-functional, 
+              Oyo Tech Hub is an open living lab and pre-incubation space designed to be a multi-functional, 
               multi-purpose space where work to catalyze creative social tech ventures takes place.
             </p>
           </div>
